@@ -1,13 +1,18 @@
+import { Typography } from '@mui/material';
 import styled from 'styled-components';
 
-export const TitleSC = styled.h1`
-  font-size: 40px;
+export const TitleMS = styled(Typography)`
+  color: ${(props) => props.theme.color};
 `;
 
 const Title = ({ children }) => (
-  <TitleSC>
+  <TitleMS
+    variant="h2"
+    align="center"
+    gutterBottom
+  >
     { children }
-  </TitleSC>
+  </TitleMS>
 );
 
 export default Title;

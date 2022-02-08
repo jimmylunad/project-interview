@@ -1,5 +1,6 @@
 import Home from './Home';
 import Users from './Users';
+import Login from './Login';
 import UserDetail from './UserDetail';
 
 const routes = [
@@ -8,6 +9,12 @@ const routes = [
     name: 'Inicio',
     showNav: true,
     element: <Home />,
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    showNav: true,
+    element: <Login />,
   },
   {
     path: '/users',
